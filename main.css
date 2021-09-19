@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.df {
+  display: flex;
+}
+
+.dg {
+  display: grid;
+}
+
+/*::-webkit-scrollbar {
+    width: 0;
+}*/
+/*fonts*/
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(fonts/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Montserrat-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/PlayfairDisplay-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url(fonts/PlayfairDisplay-Italic.ttf) format("truetype");
+}
+@font-face {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(fonts/PlayfairDisplay-Bold.ttf) format("truetype");
+}
+/*header */
+/*section*/
+.container {
+  padding: 0px 15px;
+}
+
+@media (min-width: 575.98px) {
+  .container {
+    margin: auto;
+    padding: 0;
+  }
+}
+@media (min-width: 768.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/*footer*/
+/*tablet*/
+/*media*/
+/*small_mob*/
