@@ -185,3 +185,81 @@ $brown: #AE7C78;
         margin: 8px 0 0 0;
     }
 }
+
+// discount
+.discount {
+    background: $brown;
+    margin: 80px 0 0 0;
+    &__heading {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin: 40px 0 0 0;
+    }
+    &__sub-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        color: #fff;
+        margin: 24px 0 0 0;
+    }
+    &__img {
+        grid-column: 7/13;
+    }
+    &__wrap-text {
+        grid-column: 2/6;
+    }
+}
+
+.steps {
+    margin: 80px 0 0 0;
+    &__heading {
+        grid-column: 1/13;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #AE7C78;
+    }
+    &__item-wrap {
+        grid-column: 1/13;
+        margin: 36px 0 0 0;
+    }
+    &__item {
+        display: grid;
+        grid-gap: 8px;
+        &--one {
+            grid-column: 1/4;
+        }
+        &--two {
+            grid-column: 4/7;
+        }
+        &--three {
+            grid-column: 7/10;
+        }
+        &--four {
+            grid-column: 10/13;
+        }
+    }
+    &__img {
+        justify-self: center;
+    }
+    &__text {}
+    &__item-heading {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        color: #AE7C78;
+        text-align: center;
+    }
+    &__item-sub-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        color: #AE7C78;
+    }
+}
