@@ -332,6 +332,55 @@ h3 {
   color: #AE7C78;
 }
 
+.some-info {
+  margin: 80px 0 0 0;
+}
+.some-info__text {
+  grid-column: 1/5;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+}
+.some-info__heading {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: #AE7C78;
+}
+.some-info__sub-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: #AE7C78;
+}
+.some-info__icon-social-network {
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(100%));
+  justify-content: start;
+  grid-gap: 20px;
+}
+.some-info__img {
+  grid-column: 6/13;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.some-info__img--one {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.some-info__img--two {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+.some-info__img--three {
+  grid-column: 4/8;
+  grid-row: 1/3;
+}
+
 /*footer*/
 /*tablet*/
 /*media*/
