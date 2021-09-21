@@ -314,3 +314,51 @@ $brown: #AE7C78;
         }
     }
 }
+
+// review
+.review {
+    border: 1px solid #AE7C78;
+    padding: 40px 0 64px 0;
+    margin: 80px 0 0 0;
+    &__item-heading {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        color: #AE7C78;
+        text-align: center;
+    }
+    &__heading {
+        grid-column: 1/13;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #AE7C78;
+    }
+    &__item-wrap {
+        grid-column: 1/13;
+        margin: 20px 0 0 0;
+    }
+    &__item {
+        display: grid;
+        grid-gap: 16px;
+        padding: 0 42px;
+        &--one {
+            grid-column: 1/5;
+        }
+        &--two {
+            grid-column: 5/9;
+        }
+        &--three {
+            grid-column: 9/13;
+        }
+    }
+    &__item-sub_text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        color: #AE7C78;
+    }
+}
