@@ -428,6 +428,92 @@ h3 {
   color: #AE7C78;
 }
 
+.popular {
+  margin: 80px 0 0px 0;
+  padding: 0 0 24px 0;
+  position: relative;
+}
+.popular__slider {
+  grid-column: 3/11;
+}
+.popular__heading {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: #AE7C78;
+  text-align: center;
+  grid-column: 1/13;
+}
+
+.slide__item {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.slide__text-part {
+  display: grid;
+  grid-column: 1/5;
+  grid-template-columns: repeat(4, 1fr);
+  align-self: start;
+}
+.slide__heading {
+  grid-column: 1/5;
+  font-family: Montserrat;
+  font-style: normal;
+  color: #AE7C78;
+  margin: 27px 0 0 0;
+}
+.slide__sub-text {
+  grid-column: 1/5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: #AE7C78;
+  margin: 20px 0 0 0;
+}
+.slide__size {
+  grid-column: 1/5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: #AE7C78;
+  margin: 24px 0 0 0;
+}
+.slide__price {
+  grid-column: 1/5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  color: #AE7C78;
+  margin: 24px 0 0 0;
+}
+.slide__bttn {
+  grid-column: 1/4;
+  background: #D89999;
+  border-radius: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  margin: 64px 0 0 0;
+}
+.slide__img-part {
+  grid-column: 5/8;
+}
+.slider__arrow {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /*footer*/
 /*tablet*/
 /*media*/

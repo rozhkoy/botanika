@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -54,13 +57,63 @@
 
 
             </div>
-            <div class="polular">
-                <h2 class="polular__heading">
+            <!-- slider -->
+            <div class="popular grid">
+                <h2 class="popular__heading">
                     Популярные букеты
                 </h2>
                 <div class="popular__slider">
-                    <div class="slide__item">
-                        .slider
+                    <div class="slide__wrap">
+                        <div class="slide__item">
+                            <div class="slide__text-part">
+                                <h3 class="slide__heading">Букет «Нежность»</h3>
+                                <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                                <p class="slide__size">30 × 40 см</p>
+                                <h3 class="slide__price">3600 руб.</h3>
+                                <a href="" class="slide__bttn">Заказать</a>
+                            </div>
+                            <div class="slide__img-part">
+                                <img src="img/slide.png" alt="" class="slide__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__wrap">
+                        <div class="slide__item">
+                            <div class="slide__text-part">
+                                <h3 class="slide__heading">Букет «Нежность»</h3>
+                                <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                                <p class="slide__size">30 × 40 см</p>
+                                <h3 class="slide__price">3600 руб.</h3>
+                                <a href="" class="slide__bttn">Заказать</a>
+                            </div>
+                            <div class="slide__img-part">
+                                <img src="img/slide.png" alt="" class="slide__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__wrap">
+                        <div class="slide__item">
+                            <div class="slide__text-part">
+                                <h3 class="slide__heading">Букет «Нежность»</h3>
+                                <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                                <p class="slide__size">30 × 40 см</p>
+                                <h3 class="slide__price">3600 руб.</h3>
+                                <a href="" class="slide__bttn">Заказать</a>
+                            </div>
+                            <div class="slide__img-part">
+                                <img src="img/slide.png" alt="" class="slide__img">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="slider__arrow">
+                    <div class="slider__arrow-left ">
+                        <img src="img/left.svg" alt="">
+                    </div>
+                    <div class="slider__arrow-right ">
+                        <img src="img/right.svg" alt="">
                     </div>
                 </div>
 
@@ -182,6 +235,16 @@
         <!-- footer -->
         <div class="footer"></div>
     </div>
+    <script>
+        $('.popular__slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '.slider__arrow-left',
+            nextArrow: '.slider__arrow-right',
+            speed: 200,
+        });
+    </script>
 </body>
 
 </html>
