@@ -466,8 +466,6 @@ $brown: #AE7C78;
     width: 100%;
     &__leavel-top {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
     }
 }
 
@@ -541,8 +539,9 @@ $brown: #AE7C78;
 
 .footer {
     margin: 80px 0 0 0;
+    position: relative;
     &__leavel-bottom-wrap {
-        display: flex;
+        display: grid;
         grid-template-columns: repeat(3, fit-content(100%));
         justify-content: space-between;
         align-items: center;
@@ -555,9 +554,11 @@ $brown: #AE7C78;
     &__navbar {
         justify-self: center;
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(5, fit-content(100%));
-        grid-gap: 68px;
+        justify-content: space-between;
         list-style: none;
+        margin: 0 103px
     }
     &__navbar li a {
         font-family: Montserrat;
@@ -569,4 +570,15 @@ $brown: #AE7C78;
 
 .some-info {
     &__icon-social-network {}
+}
+
+// .footer__leavel-top {
+//     grid-column: 1;
+//     grid-row: 1;
+//     position: relative;
+// }
+.footer-top__text-block-wrap {
+    width: 386px;
+    position: absolute;
+    left: 13vw
 }
