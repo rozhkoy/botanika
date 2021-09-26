@@ -265,6 +265,10 @@
     }
 }
 
+.steps__item {
+    grid-auto-rows: 52px auto auto;
+}
+
 // some-info
 .some-info {
     margin: 80px 0 0 0;

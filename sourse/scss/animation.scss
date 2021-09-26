@@ -1,0 +1,70 @@
+.navbar li a:hover {
+    color: #885c59;
+    text-decoration: underline;
+    transition: all .2s;
+}
+
+.footer__navbar li a:hover {
+    color: #f8d9d6;
+    text-decoration: underline;
+    transition: all .2s;
+}
+
+.baner__bttn,
+.slide__bttn {
+    transition: all .3s;
+}
+
+.baner__bttn:hover,
+.slide__bttn:hover {
+    background: #a76b66;
+    transition: all .3s;
+    transform: translateY(-2px);
+}
+
+.slider__arrow--svg {
+    transition: all .3s;
+}
+
+.slider__arrow--svg--left:active {
+    transition: all .3s;
+    transform: translatex(-2px);
+}
+
+.slider__arrow--svg--right:active {
+    transition: all .3s;
+    transform: translatex(2px);
+}
+
+.services__item:hover {
+    background-size: cover;
+    transition: background-size 6s ease-in;
+    -moz-transition: background-size 6s ease-in;
+    -ms-transition: background-size 6s ease-in;
+    -o-transition: background-size 6s ease-in;
+    -webkit-transition: background-size 6s ease-in;
+}
+
+.services__item:hover {
+    background-size: 105%;
+    -webkit-transition: background-size 2s ease-in;
+}
+
+.services__item:hover .services__heading {
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+.some-info__icon-social-network a svg {
+    transition: all .3s;
+}
+
+.some-info__icon-social-network a svg:hover {
+    fill: #a76b66;
+    transition: all .3s;
+}
+
+.some-info__icon-social-network--footer a svg:hover {
+    fill: #ffd6d2;
+    transition: all .3s;
+}
