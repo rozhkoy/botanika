@@ -14,14 +14,14 @@
 <body>
 
     <!-- header -->
-    <section class="header-wrap">
-        <div class="header-mob">
-            <span class="header-mon__bttn">
-                <hr class="header-mon__item">
-                <hr class="header-mon__item">
-                <hr class="header-mon__item">
-            </span>
+    <div class="header-mob">
+        <img src="/img/logo.svg" alt="" class="header-mob__logo">
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
         </div>
+    </div>
+    <section class="header-wrap">
         <div class="header container">
             <ul class="navbar navabar__left">
                 <li>
@@ -331,6 +331,14 @@
             nextArrow: '.slider__arrow-right',
             speed: 300,
         });
+    </script>
+    <script>
+        (function() {
+            $('.hamburger-menu').on('click', function() {
+                $('.bar').toggleClass('animate');
+                $('.header-wrap').toggleClass('open__nav');
+            })
+        })();
     </script>
 </body>
 

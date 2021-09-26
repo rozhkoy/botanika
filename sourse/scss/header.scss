@@ -1,66 +1,128 @@
-/*header */
-
-.header-wrap {
-    border-top: 1px solid #AE7C78;
-    border-bottom: 1px solid #AE7C78;
-    padding: 16px 0;
-    position: fixed;
-    background: #fff;
-    top: 0;
-    left: 0;
-    width: 100%;
-    // margin: 20px 0;
-    z-index: 888;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr fit-content(100%) 1fr;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-}
-
-.container {}
-
-.navbar {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, fit-content(100%));
-    justify-content: space-between;
-}
-
-.navbar {
-    list-style: none;
-    &__left {}
-    &__right {}
-}
-
-.navbar li a {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #AE7C78;
-}
-
-.navbar {
-    &__logo {
-        margin: 0 64px 0 64px;
-    }
-}
-
-.header-mon__bttn {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.header-mon__item {
-    color: red;
-    height: 1px;
-}
+        /*header */
+        
+        .header-wrap {
+            border-top: 1px solid #AE7C78;
+            border-bottom: 1px solid #AE7C78;
+            padding: 16px 0;
+            position: fixed;
+            background: #fff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            // margin: 20px 0;
+            z-index: 888;
+        }
+        
+        .header {
+            display: grid;
+            grid-template-columns: 1fr fit-content(100%) 1fr;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+        
+        .container {}
+        
+        .navbar {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, fit-content(100%));
+            justify-content: space-between;
+        }
+        
+        .navbar {
+            list-style: none;
+            &__left {}
+            &__right {}
+        }
+        
+        .navbar li a {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #AE7C78;
+        }
+        
+        .navbar {
+            &__logo {
+                margin: 0 64px 0 64px;
+            }
+        }
+        
+        .header-mon__bttn {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .header-mon__item {
+            background: $brown;
+            height: 2px;
+            border-radius: 2px;
+        }
+        
+        .header-mob {
+            display: none;
+            grid-template-columns: repeat(2, fit-content(100%));
+            justify-content: space-between;
+        }
+        
+        .bar,
+        .bar:after,
+        .bar:before {
+            width: 30px;
+            height: 2px;
+            border-radius: 2px;
+        }
+        
+        .bar {
+            position: relative;
+            transform: translateY(-50%px);
+            top: 50%;
+            background: $brown;
+            transition: all 0ms 300ms;
+        }
+        
+        .bar.animate {
+            background: rgba(255, 255, 255, 0);
+        }
+        
+        .bar:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            background: $brown;
+            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .bar:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            background: $brown;
+            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .bar.animate:after {
+            top: 0;
+            transform: rotate(45deg);
+            transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .bar.animate:before {
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .open__nav {
+            transform: translateX(0%) !important;
+            transition: all 0.3s;
+        }
