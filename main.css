@@ -169,7 +169,7 @@ h3 {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: 8px;
   background: #AE7C78;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -178,7 +178,7 @@ h3 {
   content: "";
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 8px;
   background: #AE7C78;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
