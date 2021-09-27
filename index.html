@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main-dist.css">
+
     <title>Document</title>
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="main-dist.css">
 </head>
 
 <body>
@@ -97,63 +98,67 @@
                 <h2 class="popular__heading">
                     Популярные букеты
                 </h2>
-                <div class="popular__slider">
-                    <div class="slide__wrap">
-                        <div class="slide__item">
-                            <div class="slide__text-part">
-                                <h3 class="slide__heading">Букет «Нежность»</h3>
-                                <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-                                <p class="slide__size">30 × 40 см</p>
-                                <h3 class="slide__price">3600 руб.</h3>
-                                <a href="http://m999592o.beget.tech/portfolio/" class="slide__bttn">Заказать</a>
+
+                <div class="popular__slider swiper">
+                    <div class=" swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide__item">
+                                <div class="slide__text-part">
+                                    <h3 class="slide__heading">Букет «Нежность»</h3>
+                                    <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                                    <p class="slide__size">30 × 40 см</p>
+                                    <h3 class="slide__price">3600 руб.</h3>
+                                    <a href="http://m999592o.beget.tech/portfolio/" class="slide__bttn">Заказать</a>
+                                </div>
+                                <div class="slide__img-part">
+                                    <img loading="lazy" src="img/slide.png" alt="" class="slide__img">
+                                </div>
                             </div>
-                            <div class="slide__img-part">
-                                <img loading="lazy" src="img/slide.png" alt="" class="slide__img">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide__item">
+                                <div class="slide__text-part">
+                                    <h3 class="slide__heading">Букет «Нежность»</h3>
+                                    <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                                    <p class="slide__size">30 × 40 см</p>
+                                    <h3 class="slide__price">3600 руб.</h3>
+                                    <a href="http://m999592o.beget.tech/portfolio/" class="slide__bttn">Заказать</a>
+                                </div>
+                                <div class="slide__img-part">
+                                    <img loading="lazy" src="img/slide.png" alt="" class="slide__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide__item">
+                                <div class="slide__text-part">
+                                    <h3 class="slide__heading">Букет «Нежность»</h3>
+                                    <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                                    <p class="slide__size">30 × 40 см</p>
+                                    <h3 class="slide__price">3600 руб.</h3>
+                                    <a href="http://m999592o.beget.tech/portfolio/" class="slide__bttn">Заказать</a>
+                                </div>
+                                <div class="slide__img-part">
+                                    <img loading="lazy" src="img/slide.png" alt="" class="slide__img">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slide__wrap">
-                        <div class="slide__item">
-                            <div class="slide__text-part">
-                                <h3 class="slide__heading">Букет «Нежность»</h3>
-                                <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-                                <p class="slide__size">30 × 40 см</p>
-                                <h3 class="slide__price">3600 руб.</h3>
-                                <a href="http://m999592o.beget.tech/portfolio/" class="slide__bttn">Заказать</a>
-                            </div>
-                            <div class="slide__img-part">
-                                <img loading="lazy" src="img/slide.png" alt="" class="slide__img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide__wrap">
-                        <div class="slide__item">
-                            <div class="slide__text-part">
-                                <h3 class="slide__heading">Букет «Нежность»</h3>
-                                <p class="slide__sub-text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-                                <p class="slide__size">30 × 40 см</p>
-                                <h3 class="slide__price">3600 руб.</h3>
-                                <a href="http://m999592o.beget.tech/portfolio/" class="slide__bttn">Заказать</a>
-                            </div>
-                            <div class="slide__img-part">
-                                <img loading="lazy" src="img/slide.png" alt="" class="slide__img">
-                            </div>
-                        </div>
-                    </div>
+
 
 
                 </div>
                 <div class="slider__arrow">
                     <div class="slider__arrow-left ">
                         <svg width="51" class="slider__arrow--svg slider__arrow--svg--left " fill="#AE7C78" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z" />
-                            </svg>
+                        <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z" />
+                        </svg>
 
                     </div>
                     <div class="slider__arrow-right ">
                         <svg width="51" height="16" class="slider__arrow--svg slider__arrow--svg--right  " viewBox="0 0 51 16" fill="#AE7C78" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z" />
-                            </svg>
+                        <path d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z" />
+                        </svg>
                     </div>
                 </div>
 
@@ -358,7 +363,7 @@
         </div>
     </div>
     </div>
-    <script>
+    <!-- <script>
         $('.popular__slider').slick({
             infinite: true,
             slidesToShow: 1,
@@ -375,6 +380,20 @@
                 $('.header-wrap').toggleClass('open__nav');
             })
         })();
+    </script> -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: '.slider__arrow-left',
+                prevEl: '.slider__arrow-right',
+            }
+
+        });
     </script>
 </body>
 
